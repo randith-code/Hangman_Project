@@ -1,0 +1,24 @@
+.key{
+    width: 100%;
+    border: 3px solid black;
+    aspect-ratio: 1/1;
+    padding: .5rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    background: transparent;
+    cursor: pointer;
+    color: black;
+}
+
+.active{
+    background-color: hsl(200, 100%, 75%);
+    color: white;
+}
+
+.inactive{
+    opacity: .3;
+}
+
+.key:hover:not(:defined),.key:focus:not(:disabled){
+    background-color: hsl(200, 100%, 75%);
+}
